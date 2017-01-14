@@ -58,9 +58,9 @@ $(document).ready(function(){
 			var iniminute=date.getMinutes();
 			var inisecond=date.getSeconds();
 			
-			var hour=parseInt(document.timer0.hours.value)+inihour;
-			var minute=parseInt(document.timer0.minutes.value)+iniminute;
-			var second=parseInt(document.timer0.seconds.value)+inisecond;
+			var hour=parseInt(document.timer1.hours.value)+inihour;
+			var minute=parseInt(document.timer1.minutes.value)+iniminute;
+			var second=parseInt(document.timer1.seconds.value)+inisecond;
 			var sum=hour*3600+minute*60+second;
 			timers[1].doneTime=sum2date(sum);
 			
@@ -91,9 +91,9 @@ $(document).ready(function(){
 			var iniminute=date.getMinutes();
 			var inisecond=date.getSeconds();
 			
-			var hour=parseInt(document.timer0.hours.value)+inihour;
-			var minute=parseInt(document.timer0.minutes.value)+iniminute;
-			var second=parseInt(document.timer0.seconds.value)+inisecond;
+			var hour=parseInt(document.timer2.hours.value)+inihour;
+			var minute=parseInt(document.timer2.minutes.value)+iniminute;
+			var second=parseInt(document.timer2.seconds.value)+inisecond;
 			var sum=hour*3600+minute*60+second;
 			timers[2].doneTime=sum2date(sum);
 			
@@ -143,9 +143,9 @@ $(document).ready(function(){
 		timers[1].doneTime=date;
 		timers[1].state=1;
 		var msg=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
-			$('#doneTime0').html(msg);
-		$('#ini0').show();
-		$('#then0').hide();
+			$('#doneTime1').html(msg);
+		$('#ini1').show();
+		$('#then1').hide();
 		
 	});
 	$('#reset1').click(function(){
